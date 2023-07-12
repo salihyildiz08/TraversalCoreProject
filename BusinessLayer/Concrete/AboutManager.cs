@@ -38,7 +38,12 @@ namespace BusinessLayer.Concrete
 			return _aboutDal.GetList();
 		}
 
-		public void TUpdate(About t)
+        public List<About> TGetListFilter(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TUpdate(About t)
 		{
 			_aboutDal.Update(t);
 		}

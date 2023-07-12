@@ -4,46 +4,47 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class SubAboutManager : ISubAboutService
+    public class CommentManager : ICommentService
     {
-        ISubAboutDal _subAboutDal;
+        ICommentDal _commentDal;
 
-        public SubAboutManager(ISubAboutDal subAboutDal)
+        public CommentManager(ICommentDal commentDal)
         {
-            _subAboutDal = subAboutDal;
+            _commentDal = commentDal;
         }
 
-        public void TAdd(SubAbout t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void TDelete(SubAbout t)
+        public void TAdd(Comment t)
         {
             throw new NotImplementedException();
         }
 
-        public SubAbout TGetByID(int id)
+        public void TDelete(Comment t)
         {
             throw new NotImplementedException();
         }
 
-        public List<SubAbout> TGetList()
-        {
-           return _subAboutDal.GetList();
-        }
-
-        public List<SubAbout> TGetListFilter(int id)
+        public Comment TGetByID(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void TUpdate(SubAbout t)
+        public List<Comment> TGetList()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Comment> TGetListFilter(int id)
+        {
+            return _commentDal.GetListFilter(x=>x.DestinationID==id);
+        }
+
+        public void TUpdate(Comment t)
         {
             throw new NotImplementedException();
         }

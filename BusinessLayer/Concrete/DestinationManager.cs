@@ -38,6 +38,11 @@ namespace BusinessLayer.Concrete
             return _destinationDal.GetList();
         }
 
+        public List<Destination> TGetListFilter(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void TUpdate(Destination t)
         {
             throw new NotImplementedException();

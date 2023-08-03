@@ -157,7 +157,7 @@
                     <!--//author-card-->
 
                 @await Component.InvokeAsync("_CommentList",new {id=Model.ID})
-                @await Component.InvokeAsync("_AddComment")
+                @await Html.PartialAsync("~/Views/Comment/AddComment.cshtml",new {id=Model.ID})
 
                     
                 </div>

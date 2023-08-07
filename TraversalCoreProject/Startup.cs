@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TraversalCoreProject.Models;
 
 namespace TraversalCoreProject
 {
@@ -29,7 +30,8 @@ namespace TraversalCoreProject
 		{
 			//identy
 			services.AddDbContext<Context>();
-			services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<Context>();
+			services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<Context>()
+				.AddErrorDescriber<CustomIdentiyValidator>().AddEntityFrameworkStores<Context>();
 			services.AddControllersWithViews();
 
 			services.AddMvc(config =>

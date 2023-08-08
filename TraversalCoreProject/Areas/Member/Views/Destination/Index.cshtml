@@ -1,0 +1,55 @@
+﻿@using EntityLayer.Concrete
+@model List<Destination>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-4">
+            <div class="card-header pb-0">
+                <h6>Active Destination</h6>
+            </div>
+            <div class="card-body px-0 pt-0 pb-2">
+                <div class="table-responsive p-0">
+                    <table class="table align-items-center mb-0">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>City</th>
+                                <th>Time</th>
+                                <th>Capacity</th>
+                                <th>Price</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.ID</td>
+                                    <td>@item.City</td>
+                                    <td>@item.DayNight</td>
+                                    <td>@item.Capacity</td>
+                                    <td>@item.Price $</td>
+
+                                    <td class="align-middle  text-sm">
+                                        <a href="#">
+                                        <span class="badge badge-sm bg-gradient-success">Details</span>
+                                        </a>
+                                    </td>
+
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

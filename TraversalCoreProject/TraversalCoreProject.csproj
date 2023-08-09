@@ -402,6 +402,7 @@
     <Folder Include="wwwroot\Member\.git\objects\info\" />
     <Folder Include="wwwroot\Member\.git\objects\pack\" />
     <Folder Include="wwwroot\Member\.git\refs\tags\" />
+    <Folder Include="wwwroot\userimages\" />
   </ItemGroup>
 
 </Project>

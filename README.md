@@ -1,6 +1,4 @@
-Elbette, aşağıda projenizin açıklamalarıyla birlikte daha derli toplu bir README.md taslağı oluşturdum. Dilerseniz bu yapıyı kullanarak projenize dair kapsamlı bir belgelendirme oluşturabilirsiniz.
 
-```markdown
 # .NET Core MVC 5 Projesi
 
 Bu proje, **.NET Core MVC 5** kullanılarak geliştirilmiştir ve çeşitli modern yazılım geliştirme konseptlerini ve teknolojilerini içermektedir. Aşağıda kullanılan teknolojiler ve tasarım desenleri hakkında detaylı bilgi bulabilirsiniz.
